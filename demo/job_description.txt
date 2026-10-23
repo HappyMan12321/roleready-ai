@@ -1,0 +1,17 @@
+Junior Data Analyst — Harbor Retail (fictional demo)
+
+We are seeking a junior analyst to support our retail insights team.
+
+Requirements:
+- SQL experience is required to query sales data.
+- Python experience is required for data cleaning.
+- Data visualization experience is required; Tableau is preferred.
+- Strong communication of findings to stakeholders is required.
+- A bachelor's degree in analytics or a related field is required.
+
+Preferred:
+- Experience designing and analyzing A/B tests.
+- Familiarity with cloud data warehouses such as Snowflake.
+
+Responsibilities include exploring sales trends, preparing dashboards, and
+working with marketing stakeholders to explain findings.
