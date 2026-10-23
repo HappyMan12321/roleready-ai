@@ -1,0 +1,19 @@
+ALEX MORGAN
+Junior Data Analyst | Fictional demo candidate
+
+SUMMARY
+Early-career analyst with Python, SQL, Excel, and Tableau project experience.
+
+EXPERIENCE
+Data Intern, Cedar Market | June 2025 - August 2025
+- Used SQL to query sales data and summarize weekly sales trends.
+- Built a Tableau dashboard to visualize monthly sales by region.
+- Shared weekly findings with the marketing team.
+
+PROJECTS
+Customer Survey Analysis
+- Built a Python script to clean 500 survey responses.
+- Used Excel pivot tables to summarize customer feedback.
+
+EDUCATION
+B.S. Business Analytics, Example University | 2026
