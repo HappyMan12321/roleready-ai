@@ -4,11 +4,20 @@ An evidence-first resume coach for applicants. Compare your actual experience wi
 
 **Runnable Python + Streamlit MVP.** Starts in a key-free demo mode. Live reviews use your own OpenAI API key. No live API results are bundled or claimed.
 
+## Get the project
+
+```bash
+git clone https://github.com/HappyMan12321/roleready-ai.git
+cd roleready-ai
+```
+
+You can also choose **Code → Download ZIP** on GitHub and unzip the downloaded folder.
+
 ## Start on a Mac
 
 Use Python **3.12** (the tested version). If `python3.12 --version` fails, install Python 3.12 from [python.org](https://www.python.org/downloads/macos/). Apple's bundled Python 3.9 is too old for this project. An internet connection is needed to install dependencies.
 
-1. Unzip `RoleReady-AI-MVP.zip` and open Terminal in the extracted `roleready-ai` folder. You can type `cd `, drag the folder into Terminal, and press Return.
+1. Open Terminal in the project folder. If you used the clone commands above, you are already there. Otherwise, type `cd `, drag the unzipped folder into Terminal, and press Return.
 2. Run:
 
 ```bash
