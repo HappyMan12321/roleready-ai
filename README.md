@@ -1,4 +1,32 @@
-# RoleReady AI
+# RoleReady AI — Web App
+
+**[Open RoleReady](https://roleready-ai-beta.vercel.app)**
+
+The hosted application now uses **Next.js, React, and TypeScript** on Vercel. Its source is in [`web/`](web). The original Python/Streamlit prototype is preserved below and in the repository root.
+
+## Run the web app
+
+Use Node.js 22 or 24:
+
+```bash
+cd web
+npm ci
+cp .env.example .env.local
+npm run dev
+```
+
+Open http://127.0.0.1:3000. The fictional demo needs no API key. Live AI remains disabled until the owner configures the server-side OpenAI key, private access code, and live-enabled flag in Vercel.
+
+- [Web setup, security, and deployment instructions](web/README.md)
+- [Web verification results](web/TEST_RESULTS.md): 45 offline tests, strict TypeScript, production build, and deployed document-extraction checks passed.
+- Vercel project: `roleready-ai`; root directory: `web`; production branch: `main`.
+- No Supabase database is needed for the current session-only workspace. Add authenticated persistence only when saved applications are requested.
+
+The web app preserves previous reviews when inputs change, isolates the demo, previews revisions before acceptance, restores saved drafts, and exports text/JSON or printable PDF. No real API output has been tested or claimed without the user's key.
+
+---
+
+# Original Streamlit prototype
 
 An evidence-first resume coach for applicants. Compare your actual experience with a job description, see where the evidence is strong or missing, and improve bullet wording without inventing achievements.
 

@@ -1,0 +1,12 @@
+import { Materials, Report, Revision } from './schema';
+import { matchScore } from './validation';
+export function fingerprint(m:Materials){return JSON.stringify([m.resume,m.job,m.persona]);}
+export function activeDraft(report:Report,original:string){return report.active[original]??report.analysis.bullet_rewrites.find(b=>b.original===original)?.rewritten??original;}
+export function acceptRevision(report:Report,revision:Revision):Report{return {...report,revisions:report.revisions.some(r=>r.original===revision.original&&r.rewritten===revision.rewritten)?report.revisions:[...report.revisions,revision],active:{...report.active,[revision.original]:revision.rewritten}};}
+export function restoreRevision(report:Report,original:string,draft:string):Report{
+  const versions=[...report.analysis.bullet_rewrites,...report.revisions].filter(r=>r.original===original).map(r=>r.rewritten);
+  if(!versions.includes(draft))throw Error('Only a saved draft can be restored.');return {...report,active:{...report.active,[original]:draft}};
+}
+export function reportText(r:Report){return ['ROLEREADY — RESUME REVIEW',r.materials.role||'Resume review',`Source: ${r.source==='demo'?'Authored fictional demo. No API call was made.':'OpenAI API'}`,`Created: ${r.created}`,`Evidence alignment: ${matchScore(r.analysis)}/100 (heuristic; not an ATS score or hiring prediction)`,r.analysis.summary,'REQUIREMENTS',...r.analysis.requirements.map(q=>`${q.requirement} [${q.importance}; ${q.status}]\nJob: ${q.job_quote}\nResume: ${q.resume_evidence||'Not evidenced'}\n${q.explanation}\nNext: ${q.next_step}`),'CURRENT BULLET DRAFTS',...r.analysis.bullet_rewrites.map(b=>`Original: ${b.original}\nCurrent draft: ${activeDraft(r,b.original)}`),'ACTION PLAN',...r.analysis.action_plan,'READABILITY TIPS',...r.analysis.ats_tips,'INTERVIEW PRACTICE',...r.analysis.interview_questions,'ACCEPTED HISTORY',...r.revisions.map(b=>`${b.original}\n${b.rewritten}\n${b.rationale}`),'LIMITATIONS',...r.analysis.limitations,'Source and number checks do not establish full semantic truth. Verify every claim.'].join('\n\n');}
+export function exportFilename(r:Report,ext:string){return `roleready-${(r.materials.role||'resume-review').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,60)}-${r.created.slice(0,10)}.${ext}`;}
+export function exportJson(r:Report){const {materials,...rest}=r;return JSON.stringify({...rest,role:materials.role,persona:materials.persona,alignment_score:matchScore(r.analysis)},null,2);}

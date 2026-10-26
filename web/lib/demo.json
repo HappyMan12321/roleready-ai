@@ -1,0 +1,147 @@
+{
+  "resume": "ALEX MORGAN\nJunior Data Analyst | Fictional demo candidate\n\nSUMMARY\nEarly-career analyst with Python, SQL, Excel, and Tableau project experience.\n\nEXPERIENCE\nData Intern, Cedar Market | June 2025 - August 2025\n- Used SQL to query sales data and summarize weekly sales trends.\n- Built a Tableau dashboard to visualize monthly sales by region.\n- Shared weekly findings with the marketing team.\n\nPROJECTS\nCustomer Survey Analysis\n- Built a Python script to clean 500 survey responses.\n- Used Excel pivot tables to summarize customer feedback.\n\nEDUCATION\nB.S. Business Analytics, Example University | 2026\n",
+  "job": "Junior Data Analyst \u2014 Harbor Retail (fictional demo)\n\nWe are seeking a junior analyst to support our retail insights team.\n\nRequirements:\n- SQL experience is required to query sales data.\n- Python experience is required for data cleaning.\n- Data visualization experience is required; Tableau is preferred.\n- Strong communication of findings to stakeholders is required.\n- A bachelor's degree in analytics or a related field is required.\n\nPreferred:\n- Experience designing and analyzing A/B tests.\n- Familiarity with cloud data warehouses such as Snowflake.\n\nResponsibilities include exploring sales trends, preparing dashboards, and\nworking with marketing stakeholders to explain findings.\n",
+  "analysis": {
+    "summary": "The sample resume shows relevant SQL, Python, Tableau, and analytics education. Stakeholder communication needs clearer evidence; A/B testing and cloud warehouses are not evidenced. This is a human-authored demonstration report.",
+    "requirements": [
+      {
+        "requirement": "SQL",
+        "job_quote": "SQL experience is required to query sales data.",
+        "importance": "required",
+        "status": "matched",
+        "resume_evidence": "Used SQL to query sales data and summarize weekly sales trends.",
+        "explanation": "SQL querying is explicitly evidenced.",
+        "next_step": "Be ready to explain the queries and data checks you used."
+      },
+      {
+        "requirement": "Python data cleaning",
+        "job_quote": "Python experience is required for data cleaning.",
+        "importance": "required",
+        "status": "matched",
+        "resume_evidence": "Built a Python script to clean 500 survey responses.",
+        "explanation": "A concrete Python cleaning project is included.",
+        "next_step": "Explain how missing values and duplicates were handled, if applicable."
+      },
+      {
+        "requirement": "Data visualization",
+        "job_quote": "Data visualization experience is required; Tableau is preferred.",
+        "importance": "required",
+        "status": "matched",
+        "resume_evidence": "Built a Tableau dashboard to visualize monthly sales by region.",
+        "explanation": "The dashboard demonstrates visualization experience and the preferred tool.",
+        "next_step": "Prepare a walkthrough of the dashboard using non-confidential data."
+      },
+      {
+        "requirement": "Stakeholder communication",
+        "job_quote": "Strong communication of findings to stakeholders is required.",
+        "importance": "required",
+        "status": "partial",
+        "resume_evidence": "Shared weekly findings with the marketing team.",
+        "explanation": "The resume supports communication, but does not describe its clarity or impact.",
+        "next_step": "If true, describe how the team used your findings. Do not invent an outcome."
+      },
+      {
+        "requirement": "Relevant degree",
+        "job_quote": "A bachelor's degree in analytics or a related field is required.",
+        "importance": "required",
+        "status": "matched",
+        "resume_evidence": "B.S. Business Analytics, Example University | 2026",
+        "explanation": "The listed degree aligns with the requested field.",
+        "next_step": "Keep the degree title and completion date accurate."
+      },
+      {
+        "requirement": "A/B testing",
+        "job_quote": "Experience designing and analyzing A/B tests.",
+        "importance": "preferred",
+        "status": "missing",
+        "resume_evidence": "",
+        "explanation": "A/B testing is not evidenced in the resume.",
+        "next_step": "If you have relevant coursework or a real project, add it; otherwise consider a practice project."
+      },
+      {
+        "requirement": "Cloud data warehouses",
+        "job_quote": "Familiarity with cloud data warehouses such as Snowflake.",
+        "importance": "preferred",
+        "status": "missing",
+        "resume_evidence": "",
+        "explanation": "Cloud warehouse experience is not evidenced in the resume.",
+        "next_step": "Only add Snowflake if you have actually used it; consider introductory practice."
+      }
+    ],
+    "bullet_rewrites": [
+      {
+        "original": "Built a Python script to clean 500 survey responses.",
+        "rewritten": "Cleaned 500 survey responses with a Python script.",
+        "rationale": "Leads with the task and preserves the provided tool and count."
+      },
+      {
+        "original": "Built a Tableau dashboard to visualize monthly sales by region.",
+        "rewritten": "Visualized monthly sales by region in a Tableau dashboard.",
+        "rationale": "Highlights the visualization purpose without adding an outcome."
+      },
+      {
+        "original": "Used SQL to query sales data and summarize weekly sales trends.",
+        "rewritten": "Queried sales data with SQL to summarize weekly sales trends.",
+        "rationale": "Uses a direct action verb while preserving the original scope."
+      }
+    ],
+    "action_plan": [
+      "Prioritize the SQL and Python bullets near the top of relevant experience.",
+      "Clarify stakeholder communication with a real example, if available.",
+      "Add A/B testing or warehouse experience only if you can support it with actual work."
+    ],
+    "ats_tips": [
+      "Use standard headings such as Experience, Projects, and Education.",
+      "Use relevant terms such as SQL and Python where already supported by experience.",
+      "Check the extracted text before applying; complex layouts can lose reading order."
+    ],
+    "interview_questions": [
+      "How did you clean the survey responses with Python?",
+      "How did your Tableau dashboard help explain regional sales trends?",
+      "How would you approach learning to design an A/B test?"
+    ],
+    "limitations": [
+      "This report is an authored fictional example, not an OpenAI API result.",
+      "The alignment score is a heuristic, not an ATS score or a hiring prediction.",
+      "Source matching and number checks cannot establish full semantic truth; review every draft."
+    ]
+  },
+  "variants": {
+    "Built a Python script to clean 500 survey responses.": {
+      "Concise": {
+        "original": "Built a Python script to clean 500 survey responses.",
+        "rewritten": "Cleaned 500 survey responses using Python.",
+        "rationale": "Authored fictional demo revision. No API call was made."
+      },
+      "Action-focused": {
+        "original": "Built a Python script to clean 500 survey responses.",
+        "rewritten": "Built a Python script that cleaned 500 survey responses.",
+        "rationale": "Authored fictional demo revision. No API call was made."
+      }
+    },
+    "Built a Tableau dashboard to visualize monthly sales by region.": {
+      "Concise": {
+        "original": "Built a Tableau dashboard to visualize monthly sales by region.",
+        "rewritten": "Visualized regional monthly sales in Tableau.",
+        "rationale": "Authored fictional demo revision. No API call was made."
+      },
+      "Action-focused": {
+        "original": "Built a Tableau dashboard to visualize monthly sales by region.",
+        "rewritten": "Built a Tableau dashboard showing monthly sales by region.",
+        "rationale": "Authored fictional demo revision. No API call was made."
+      }
+    },
+    "Used SQL to query sales data and summarize weekly sales trends.": {
+      "Concise": {
+        "original": "Used SQL to query sales data and summarize weekly sales trends.",
+        "rewritten": "Summarized weekly sales trends using SQL queries.",
+        "rationale": "Authored fictional demo revision. No API call was made."
+      },
+      "Action-focused": {
+        "original": "Used SQL to query sales data and summarize weekly sales trends.",
+        "rewritten": "Queried sales data using SQL and summarized weekly sales trends.",
+        "rationale": "Authored fictional demo revision. No API call was made."
+      }
+    }
+  }
+}

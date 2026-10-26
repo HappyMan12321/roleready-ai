@@ -1,0 +1,13 @@
+import { z } from 'zod';
+export const personas = ['Supportive career coach', 'Direct resume editor', 'Technical hiring reviewer'] as const;
+export const RequirementSchema = z.object({requirement:z.string().min(1).max(200),job_quote:z.string().min(1).max(700),importance:z.enum(['required','preferred']),status:z.enum(['matched','partial','missing']),resume_evidence:z.string().max(1000),explanation:z.string().min(1).max(1000),next_step:z.string().min(1).max(1000)}).strict();
+export const RevisionSchema = z.object({original:z.string().min(10).max(1500),rewritten:z.string().min(10).max(1500),rationale:z.string().min(1).max(700)}).strict();
+export const AnalysisSchema = z.object({summary:z.string().min(1).max(1800),requirements:z.array(RequirementSchema).min(1).max(16),bullet_rewrites:z.array(RevisionSchema).max(5),action_plan:z.array(z.string().min(1).max(1000)).min(1).max(6),ats_tips:z.array(z.string().min(1).max(1000)).min(1).max(5),interview_questions:z.array(z.string().min(1).max(1000)).min(1).max(5),limitations:z.array(z.string().min(1).max(1000)).min(1).max(5)}).strict();
+export const InputSchema = z.object({resume:z.string().max(24000),job:z.string().max(18000),persona:z.enum(personas),consent:z.literal(true),accessCode:z.string().max(200).optional()}).strict();
+export const RefineInputSchema = InputSchema.extend({original:z.string().min(10).max(1500),draft:z.string().min(10).max(1500),feedback:z.string().min(10).max(1500)}).strict();
+export type Analysis = z.infer<typeof AnalysisSchema>;
+export type Revision = z.infer<typeof RevisionSchema>;
+export type Requirement = z.infer<typeof RequirementSchema>;
+export type Materials = {resume:string;job:string;role:string;persona:typeof personas[number]};
+export type Report = {id:string;created:string;source:'demo'|'openai';materials:Materials;analysis:Analysis;revisions:Revision[];active:Record<string,string>;previewCount:number};
+export const statusLabel = {matched:'Matched',partial:'Needs clarity',missing:'Not evidenced'};

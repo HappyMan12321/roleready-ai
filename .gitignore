@@ -10,3 +10,6 @@ htmlcov/
 .DS_Store
 .streamlit/secrets.toml
 *.log
+
+# Vercel project credentials and local runtime files
+.vercel/
