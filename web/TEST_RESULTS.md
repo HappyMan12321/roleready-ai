@@ -13,3 +13,9 @@
 There is no database; Supabase is deferred until account-based persistence is requested. Browser state is memory only and does not survive refresh.
 
 Source and number checks cannot establish full factual meaning. Human review remains required.
+
+## GitHub source and continuous checks
+
+- Web source published in `HappyMan12321/roleready-ai`, under `web/`; original Streamlit source preserved.
+- The pinned GitHub Actions workflow passed all checks on the migration commit: clean npm installation, TypeScript, 45 tests, production build, and dependency audit.
+- Vercel is connected to this repository with the Next.js framework, Node 24, and `web` root directory. Production branch is `main`.
