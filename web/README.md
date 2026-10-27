@@ -18,6 +18,10 @@ npm run dev
 
 Open http://127.0.0.1:3000. Do not overwrite an existing `.env.local`. No Python setup is needed for the web app.
 
+## UX improvements
+
+The complete screen-by-screen review is implemented in this web app. See [UX_IMPROVEMENTS.md](UX_IMPROVEMENTS.md) for the mapping and verification. Wording changes, action-item shortcuts, explicit session controls, accessible tabs, and in-context setup/validation are included.
+
 ## Features
 
 - Responsive desktop and phone workspace with early, sticky section navigation.

@@ -19,3 +19,10 @@ Source and number checks cannot establish full factual meaning. Human review rem
 - Web source published in `HappyMan12321/roleready-ai`, under `web/`; original Streamlit source preserved.
 - The pinned GitHub Actions workflow passed all checks on the migration commit: clean npm installation, TypeScript, 45 tests, production build, and dependency audit.
 - Vercel is connected to this repository with the Next.js framework, Node 24, and `web` root directory. Production branch is `main`.
+
+## UX review completion
+
+- **65 offline tests passed** across five files (2.68 seconds in the final full suite before documentation-only changes). This adds 13 rendered-workspace regressions and 7 UX/helper checks to the original 45 tests.
+- Strict TypeScript checking and production build passed; production dependency audit still reports zero vulnerabilities.
+- Actual desktop checks verified aligned fields, in-context live availability, word changes, explicit preview acceptance, and per-action evidence shortcuts. Phone checks verified the deliberate tab layout, no horizontal document overflow, readable drawer close control, Escape dismissal, and focus return.
+- Source and numeric safeguards remain in force. No real OpenAI request was made.
